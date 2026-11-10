@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Kiely Joyce, voice actor: commercial, corporate and e-learning, characters and games, phone systems.">
+<title>Kiely Joyce Voice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cinematic, near-monochrome single page. Huge serif name, featured demo, take-sheet demo list, range spectrum, on-mic/off-mic split, contact. One accent: whiskey amber. */
+:root{
+  --bg:#0F0E11; --raise:#18171B; --ink:#EEE9E1; --muted:#8F8A84; --line:#2A282D; --amber:#E2A657; --amber-ink:#0F0E11;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --bg:#F6F4F0; --raise:#FFFFFF; --ink:#141317; --muted:#6B6660; --line:#DEDAD3; --amber:#A8661A; --amber-ink:#FFFFFF; color-scheme:light}}
+:root[data-theme="light"]{
+  --bg:#F6F4F0; --raise:#FFFFFF; --ink:#141317; --muted:#6B6660; --line:#DEDAD3; --amber:#A8661A; --amber-ink:#FFFFFF; color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0}
+img{max-width:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1100px;margin:0 auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:4px}
+.label{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:28px;flex-wrap:wrap}
+.mark{font:400 24px/1 var(--serif);text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+nav ul a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding-block:48px 72px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+.hero>div{min-width:0}
+h1{font:400 clamp(72px,14vw,184px)/.86 var(--serif);letter-spacing:-.03em;margin:18px 0 28px}
+h1 em{font-style:italic;color:var(--amber)}
+.lede{font:400 clamp(20px,2.4vw,26px)/1.4 var(--sans);max-width:30ch;margin:0 0 8px;text-wrap:balance}
+.aside{color:var(--muted);margin:0 0 40px;max-width:46ch}
+.portrait{position:relative;width:300px;max-width:100%;margin:0;cursor:pointer}
+.portrait .ph{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px var(--line),0 0 0 10px var(--bg),0 0 0 11px var(--amber)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.portrait .alt{opacity:0}
+.portrait:hover .alt,.portrait.flip .alt{opacity:1}
+.portrait figcaption{margin-top:22px;text-align:center;font:400 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.portrait:hover figcaption,.portrait.flip figcaption{color:var(--amber)}
+.otc{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;max-width:640px}
+.otc figure{margin:0;min-width:0}
+.otc img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;display:block}
+.otc figcaption{font:400 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+
+/* player */
+.player{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;max-width:640px}
+.player>div{min-width:0}
+.play{width:68px;height:68px;border-radius:50%;border:1px solid var(--amber);background:var(--amber);color:var(--amber-ink);display:grid;place-items:center;cursor:pointer;transition:transform .2s}
+.play:hover{transform:scale(1.05)}
+.play svg{width:22px;height:22px}
+.ptop{display:flex;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap}
+.ptop .name{font-weight:500}
+.time{font:400 13px/1.7 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.wave{display:flex;align-items:center;height:40px;cursor:pointer}
+.wave i{flex:1 1 0;min-width:0;border-inline:1px solid transparent;background:var(--line);background-clip:padding-box;transition:background .1s}
+.wave i.on{background:var(--amber)}
+
+section{border-top:1px solid var(--line);padding-block:72px}
+.shead{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:40px}
+.shead>*{min-width:0}
+h2{font:400 clamp(40px,5.5vw,64px)/1 var(--serif);letter-spacing:-.02em;margin:0}
+h2 em{font-style:italic;color:var(--amber)}
+.shead p{margin:0;color:var(--muted);max-width:52ch;align-self:end}
+
+/* take sheet */
+.takes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.take{display:grid;grid-template-columns:72px 1.1fr 1.4fr auto;gap:24px;align-items:center;padding-block:26px;border-bottom:1px solid var(--line)}
+.take>*{min-width:0}
+.take .no{font:400 13px/1 var(--mono);color:var(--muted)}
+.take h3{font:400 30px/1.1 var(--serif);margin:0}
+.take p{margin:0;color:var(--muted);font-size:15px}
+.status{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:8px 10px;border-radius:999px;white-space:nowrap}
+.take .mini{width:52px;height:52px}
+.take.live h3{color:var(--ink)}
+.take:not(.live) h3{color:var(--muted)}
+
+/* range */
+.range{position:relative;padding-top:28px}
+.bar{height:2px;background:linear-gradient(90deg,var(--ink),var(--amber));opacity:.9}
+.ticks{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px;gap:16px}
+.tick{position:relative;padding-top:14px;min-width:0}
+.tick::before{content:"";position:absolute;top:-25px;left:0;width:1px;height:16px;background:var(--muted)}
+.tick b{display:block;font:400 24px/1.15 var(--serif);font-weight:400;margin-bottom:6px}
+.tick span{color:var(--muted);font-size:15px}
+.ends{display:flex;justify-content:space-between;margin-bottom:12px}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.split>div{background:var(--bg);padding:36px;min-width:0}
+.split h3{font:400 34px/1 var(--serif);margin:12px 0 18px}
+.split ul{margin:0;padding:0 0 0 18px;display:grid;gap:8px}
+.split li::marker{color:var(--amber)}
+
+.bio{display:grid;grid-template-columns:220px 1fr;gap:32px}
+.bio>*{min-width:0}
+.bio p{font:400 clamp(22px,2.6vw,30px)/1.4 var(--serif);margin:0 0 20px;max-width:34ch}
+.bio .small{font:400 16px/1.65 var(--sans);color:var(--muted);max-width:56ch}
+
+.contact h2{font-size:clamp(48px,9vw,120px);line-height:.9;margin-bottom:28px}
+.contact p{color:var(--muted);margin:0 0 28px;max-width:48ch}
+.email{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.email code{font:400 clamp(18px,2.6vw,26px)/1 var(--mono);color:var(--ink);border-bottom:1px solid var(--amber);padding-bottom:6px;user-select:all;word-break:break-all}
+.copy{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:transparent;color:var(--amber);border:1px solid var(--amber);padding:12px 14px;border-radius:999px;cursor:pointer}
+footer{border-top:1px solid var(--line);padding-block:28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+
+@media (max-width:800px){
+  .hero{grid-template-columns:1fr}
+  .portrait{width:200px;order:-1}
+  .otc{gap:8px}
+  .shead,.bio{grid-template-columns:1fr;gap:16px}
+  .take{grid-template-columns:40px 1fr auto;gap:12px 16px}
+  .take p{grid-column:2/-1;grid-row:2}
+  .ticks{grid-template-columns:1fr 1fr;row-gap:32px}
+  .tick::before{display:none}
+  .split{grid-template-columns:1fr}
+  .split>div{padding:28px 22px}
+  nav ul{gap:18px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav>
+    <a class="mark" href="#top" id="c-mark"></a>
+    <ul><li><a href="#demos">Demos</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <span class="label" id="c-role"></span>
+      <h1 id="c-name"></h1>
+      <p class="lede" id="c-lede"></p>
+      <p class="aside" id="c-aside"></p>
+      <div class="player" id="hero-player"></div>
+    </div>
+    <figure class="portrait" id="portrait" tabindex="0" aria-label="Photo of Kiely Joyce. Hover or tap for take two.">
+      <div class="ph"><img src="assets/portrait.jpg" alt="Kiely Joyce smiling"><img class="alt" src="assets/take2.jpg" alt="Kiely Joyce making a skeptical face"></div>
+      <figcaption id="cap">Take 1</figcaption>
+    </figure>
+  </header>
+
+  <section id="demos">
+    <div class="shead"><span class="label">01 / Demos</span><div><h2>The <em>reel</em> deal.</h2></div></div>
+    <ol class="takes" id="c-demos"></ol>
+  </section>
+
+  <section id="range">
+    <div class="shead"><span class="label">02 / Range</span><div><h2>Bright, <em>until it isn't.</em></h2></div></div>
+    <div class="range">
+      <div class="ends"><span class="label">Sunshine</span><span class="label">Supervillain</span></div>
+      <div class="bar"></div>
+      <div class="ticks" id="c-range"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="shead"><span class="label">03 / About</span><div><h2>Two halves, <em>one voice.</em></h2></div></div>
+    <div class="split" id="c-split"></div>
+  </section>
+
+  <section>
+    <div class="bio">
+      <span class="label">The short version</span>
+      <div><p id="c-bio"></p><p class="small" id="c-bio2"></p>
+        <div class="otc">
+          <figure><img src="assets/cat.jpg" alt="Kiely with her cat"><figcaption>Supervisor</figcaption></figure>
+          <figure><img src="assets/travel.jpg" alt="Kiely at Stonehenge"><figcaption>Field research</figcaption></figure>
+          <figure><img src="assets/scotch.jpg" alt="Kiely raising a glass"><figcaption>Vocal warm-up</figcaption></figure>
+        </div></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <span class="label">04 / Contact</span>
+    <h2>Got a <em>script?</em></h2>
+    <p id="c-pitch"></p>
+    <div class="email"><code id="c-email"></code><button class="copy" id="copy" type="button">Copy</button></div>
+  </section>
+
+  <footer><span id="c-foot"></span><span id="c-egg"></span></footer>
+</div>
+
+<script src="content.js"></script>
+<script>
+
+const $ = id => document.getElementById(id);
+$("c-mark").textContent = "Kiely Joyce";
+$("c-name").innerHTML = SITE.name;
+$("c-role").textContent = SITE.role;
+$("c-lede").textContent = SITE.lede;
+$("c-aside").textContent = SITE.aside;
+const pf=$("portrait"), cap=$("cap"), setCap=()=>cap.textContent=(pf.matches(":hover")||pf.classList.contains("flip"))?"Take 2 (the villain)":"Take 1";
+pf.onmouseenter=pf.onmouseleave=setCap; pf.onclick=()=>{pf.classList.toggle("flip");setCap();};
+pf.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pf.click();}};
+$("c-bio").textContent = SITE.bio;
+$("c-bio2").textContent = SITE.bio2;
+$("c-pitch").textContent = SITE.pitch;
+$("c-email").textContent = SITE.email;
+$("c-egg").textContent = SITE.egg;
+$("c-foot").textContent = "© " + new Date().getFullYear() + " Kiely Joyce · kielyjoyce.com";
+$("c-range").innerHTML = SITE.range.map(([a,b])=>`<div class="tick"><b>${a}</b><span>${b}</span></div>`).join("");
+$("c-split").innerHTML = SITE.split.map(s=>`<div><span class="label">${s.label}</span><h3>${s.title}</h3><ul>${s.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("");
+
+const PEAKS = [0,0,.74,.49,.74,.23,.18,.65,.61,.37,.5,.55,.45,.07,0,0,0,0,.72,.53,.51,.36,.19,.28,1,.56,.42,.53,.78,.35,.53,.49,0,.58,.85,.4,.36,.64,.37,.36,.26,.06,0,0,0,.24,.67,.35,.53,.22,.29,.47,.26,.43,.23,.01,.5,.49,.37,.46,.33,.36,.4,.25,.36,.22,.01,0,0,0,0,.53,.72,.66,.43,.44,.69,.52,.58,.29,.46,.67,.27,.63,.66,.7,.81,.81,.51,.64,.5,.28,.18,.78,0,0];
+const fmt = s => Math.floor(s/60)+":"+String(Math.floor(s%60)).padStart(2,"0");
+const PLAY='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>';
+const PAUSE='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
+const players = {};
+
+function audioFor(d){
+  if (!players[d.title]){ const a = new Audio(d.file); a.preload="metadata"; players[d.title] = {a, btns:[], ui:[]};
+    const p = players[d.title];
+    a.onplay = () => p.btns.forEach(b=>b.innerHTML=PAUSE);
+    a.onpause = a.onended = () => p.btns.forEach(b=>b.innerHTML=PLAY);
+    a.ontimeupdate = () => p.ui.forEach(f=>f(a)); }
+  return players[d.title];
+}
+function toggle(d){ const {a} = audioFor(d);
+  if (a.paused){ Object.values(players).forEach(p=>p.a!==a&&p.a.pause()); a.play(); } else a.pause(); }
+
+function heroPlayer(el, d){
+  el.innerHTML = `<button class="play" type="button" aria-label="Play ${d.title} demo">${PLAY}</button>
+    <div><div class="ptop"><span class="name">${d.title} demo</span><span class="time">0:00 / ${fmt(d.seconds)}</span></div>
+    <div class="wave">${PEAKS.map(p=>`<i style="height:${Math.max(6,p*100)}%"></i>`).join("")}</div></div>`;
+  const p = audioFor(d), btn = el.querySelector(".play"), bars=[...el.querySelectorAll(".wave i")], t=el.querySelector(".time");
+  p.btns.push(btn); btn.onclick = () => toggle(d);
+  p.ui.push(a=>{ const dur=a.duration||d.seconds, n=Math.round(a.currentTime/dur*bars.length);
+    bars.forEach((b,i)=>b.classList.toggle("on",i<n)); t.textContent=fmt(a.currentTime)+" / "+fmt(dur); });
+  el.querySelector(".wave").onclick = e => { const r=e.currentTarget.getBoundingClientRect();
+    p.a.currentTime=((e.clientX-r.left)/r.width)*(p.a.duration||d.seconds); if (p.a.paused) toggle(d); };
+}
+
+const live = SITE.demos.filter(d=>d.file);
+if (live[0]) heroPlayer($("hero-player"), live[0]);
+
+$("c-demos").innerHTML = SITE.demos.map((d,i)=>`<li class="take ${d.file?'live':''}">
+  <span class="no">Take ${String(i+1).padStart(2,"0")}</span><h3>${d.title}</h3><p>${d.about}</p>
+  ${d.file?`<button class="play mini" type="button" data-i="${i}" aria-label="Play ${d.title} demo">${PLAY}</button>`:`<span class="status">${SITE.comingSoon}</span>`}</li>`).join("");
+document.querySelectorAll(".take .play").forEach(b=>{ const d=SITE.demos[b.dataset.i]; audioFor(d).btns.push(b); b.onclick=()=>toggle(d); });
+
+$("copy").onclick = async () => {
+  try { await navigator.clipboard.writeText(SITE.email); $("copy").textContent="Copied"; }
+  catch { const r=document.createRange(); r.selectNodeContents($("c-email")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+};
+</script>
+
+</body>
+</html>
